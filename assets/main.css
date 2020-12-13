@@ -8,11 +8,11 @@ body {
 }
 
 .imgContainer {
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .paprika {
-  height: 100%;
+  height: 50%;
 }
 
 .videoBody {
