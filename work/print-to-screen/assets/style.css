@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'GothamRnd';
+  src: url('./Gotham-Medium.otf') format('opentype')
+}
+
+body {
+  /* text-transform: lowercase; */
+  font-family: 'GothamRnd';
+  vertical-align: center;
+}
+
+.txtMask {
+  shape-outside: inset(0px 0px 0px 0px);
+  clip-path: inset(0px 0px 0px 0px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}
+
+.txtContainer {
+  position: absolute;
+  visibility: hidden;
+  left: 100%;
+  width: auto;
+  white-space: nowrap;
+  font-size: 10vw;
+}
+
+#t3 {
+  line-height: 150px;
+  font-size: 300px;
+}
+
+#t4 {
+  line-height: 260px;
+  font-size: 150px;
+}
+
+#t5 div{
+  opacity: 30%;
+}
+
+.playing {
+  top: 45%;
+  line-height: 100px;
+  /* transform: translateY(-50%); */
+  mix-blend-mode: multiply;
+  vertical-align: baseline;
+}
+
+.looping {
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+}
+
+.loop {
+  top: 45%;
+  /* transform: translateY(-50%); */
+  mix-blend-mode: multiply;
+  position: absolute;
+  visibility: hidden;
+  left: 100vw;
+  width: auto;
+  font-size: 400px;
+  line-height: 80px;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.s1 {
+  width: 500px;
+  height: 500px;
+}
+
+.s2 {
+  width: 700px;
+  height: 300px;
+}
+
+.s3 {
+  width: 1000px;
+  height: 400px;
+}
+
+.s4 {
+  width: 900px;
+  height: 400px;
+}
+
+.s5 {
+  width: 1500px;
+  height: 800px;
+}
+
+
+.dot {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: none;
+  animation: pulse 2s infinite alternate;
+  transform-origin: 0% 0% 0;
+}
+
+.line {
+  position: fixed;
+  border-top: 2px dotted;
+  display: none;
+  transform-origin: top left;
+  width: 100vw;
+  height: 100vh;
+  /* animation: linepulse 2s infinite reverse; */
+  /* mix-blend-mode: multiply; */
+}
+
+@keyframes pulse {
+0% {
+  /* filter: blur(0); */
+  transform: scale(0.5, 0.5) translate(-10px, -10px);
+}
+100% {
+  /* filter: blur(1px); */
+  transform: scale(1.2, 1.2) translate(-10px, -10px);
+}
+}
+
+@keyframes linepulse {
+0% {
+  width: 100%
+  /* transform: scale(1, 1) translate(-15px, -15px); */
+}
+100% {
+  width: 0%;
+  /* filter: blur(3px); */
+  /* transform: scale(1.2, 1.2) translate(-15px, -15px); */
+}
+}
+
+
+@media only screen and (min-width: 1490px) and (max-width: 1500px) {
+}
+
+@media only screen and (max-width:799px) {
+
+}
