@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- this is the name that will appear on the tab in your browser -->
+    <title>Livestreaming</title>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" href="../assets/main.css" type="text/css" /> -->
+    <script src="https://player.dacast.com/js/player.js?contentId=1552_f_297509"></script>
+</head>
+
+<body>
+
+  <!-- <script id="f1d4dfe7-5165-a06d-3b95-c2990b7d8c12-live-3916cff7-6467-7271-caee-17f4e9acbbfc" width="100%" height="100%" src="https://player.dacast.com/js/player.js?contentId=f1d4dfe7-5165-a06d-3b95-c2990b7d8c12-live-3916cff7-6467-7271-caee-17f4e9acbbfc"  class="dacast-video"></script> -->
+  <div id="myDiv"></div>
+    <script>
+
+      window.addEventListener("load", function(){
+          var CONTENT_ID = "f1d4dfe7-5165-a06d-3b95-c2990b7d8c12-live-3916cff7-6467-7271-caee-17f4e9acbbfc"
+          var myPlayer = dacast(CONTENT_ID, 'myDiv', {
+              width: "100%",
+              height: "100%"
+            });
+      });
+
+    </script>
+</body>
+
+</html>
