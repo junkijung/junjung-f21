@@ -1,0 +1,40 @@
+@media print {
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-print-color-adjust: exact;
+}
+
+#home {
+  display: none;
+}
+
+#screen p {
+  display: none;
+}
+
+#screen img {
+  /* display: none; */
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  height: 200%;
+  filter: grayscale(100%);
+}
+
+.print {
+  font-size: 45px;
+  position: absolute;
+  top: -40px;
+  /* background-image: url("../img/img06.jpg"); */
+}
+
+.print p {
+  color: white;
+  /* mix-blend-mode: lighten; */
+}
+
+
+
+}
