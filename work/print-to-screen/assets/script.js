@@ -13,7 +13,7 @@ var onoff = [];
 var txt = [];
 var txtHeight = [];
 var txtWidth = [];
-var txtSpeed = [5, 10, 21, 50, 0.56];
+var txtSpeed = [5, 10, 21, 50, 0.56, 5];
 var animationNum = [];
 
 // for vw&vh
@@ -21,6 +21,10 @@ var vw = window.innerWidth;
 var vh = window.innerHeight;
 var resizingAmount = [];
 var gap = [];
+
+// for scroll
+var scrollTop = 0;
+var scrollLeft = 0;
 
 // for loop
 var loopInterval = 0;
@@ -72,8 +76,8 @@ window.onload = function() {
 window.addEventListener('resize', function(){
 
   // resetting vw&vh
-  vw = window.innerWidth;
-  vh = window.innerHeight;
+  vw = window.innerWidth + scrollLeft;
+  vh = window.innerHeight + scrollTop;
 
   for (i = 0; i < containerNum; i++) {
     // change the line degree
@@ -126,6 +130,23 @@ window.addEventListener('resize', function(){
       }
   }
 
+});
+
+window.addEventListener('scroll', function(){
+
+  scrollTop = document.documentElement.scrollTop;
+  scrollLeft = document.documentElement.scrollLeft;
+  // resetting vw&vh
+  vw = window.innerWidth + scrollLeft;
+  vh = window.innerHeight + scrollTop;
+
+  for (i = 0; i < containerNum; i++) {
+    // change the line degree
+    lineA[i] = vw - containerWidth[i];
+    lineB[i] = vh - containerHeight[i];
+    degree[i] = Math.atan(lineB[i] / lineA[i]) * radianConvert;
+    lineTag[i].style.transform = "rotate(" + degree[i] + "deg)";
+}
 });
 
 
