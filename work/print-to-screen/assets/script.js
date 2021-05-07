@@ -13,7 +13,7 @@ var onoff = [];
 var txt = [];
 var txtHeight = [];
 var txtWidth = [];
-var txtSpeed = [5, 10, 21, 50, 0.56, 5];
+var txtSpeed = [9, 18, 29, 50, 0.56, 5];
 var animationNum = [];
 
 // for vw&vh
