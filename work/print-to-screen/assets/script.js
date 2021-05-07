@@ -31,6 +31,7 @@ var loopInterval = 0;
 
 window.onload = function() {
 
+
   const txtContainerTag = document.querySelectorAll(".txtContainer");
   const containerTag = document.querySelectorAll(".container");
   const containerNum = containerTag.length;
@@ -72,6 +73,13 @@ window.onload = function() {
     lineTag[i].style.transform = "translateY(-1px) rotate(" + degree[i] + "deg)";
     lineTag[i].style.display = "block";
   }
+
+window.addEventListener('click', function(){
+  document.getElementById("opening").style.opacity = "100%";
+  document.getElementsByTagName('body')[0].style.overflow = "scroll";
+  document.getElementById("intro").style.display = "none";
+});
+
 
 window.addEventListener('resize', function(){
 
