@@ -11,7 +11,7 @@ $( document ).ready(function() {
     // console.log("destination = " + destination)
     $( 'html, body').animate({
       scrollTop: document.body.clientHeight
-    }, 350000);
+    }, 450000);
   });
 
 });
