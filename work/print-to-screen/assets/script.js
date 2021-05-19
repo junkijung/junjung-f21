@@ -13,7 +13,7 @@ var onoff = [];
 var txt = [];
 var txtHeight = [];
 var txtWidth = [];
-var txtSpeed = [9, 18, 29, 50, 0.56, 5];
+var txtSpeed = [9, 18, 29, 9, 9, 10, 28, 32, 14, 17];
 var animationNum = [];
 
 // for vw&vh
@@ -71,7 +71,7 @@ window.onload = function() {
     lineTag[i].style.top = containerHeight[i] + "px";
     lineTag[i].style.borderTopColor = colors[i];
     lineTag[i].style.transform = "translateY(-1px) rotate(" + degree[i] + "deg)";
-    lineTag[i].style.display = "block";
+    // lineTag[i].style.display = "block";
   }
 
 window.addEventListener('click', function(){

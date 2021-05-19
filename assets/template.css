@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Henri";
+  src: url('Henri-roman.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Henri";
+  src: url('Henri-italic.woff') format('woff');
+  font-style: italic;
+}
+
+body {
+  /* background: black; */
+  /* background-image: url("../img/bg.gif"); */
+  font-family: "Henri", "Times New Roman";
+  font-style: normal;
+  background: black;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.5s;
+  opacity: 1;
+  /* text-decoration: none; */
+}
+
+.bodyFade {
+  transition: opacity 0.5s;
+  opacity: 0;
+  background: black;
+  /* background-color: white; */
+
+}
+
+
+img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: absolute;
+  /* width: 100%; */
+  max-height: calc(100% - 60px);
+  /* min-width: 100%; */
+  /* top: 50%; */
+  max-width: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  /* transform: translateY(-50%); */
+}
+
+nav {
+  font-family: sans-serif;
+  position: fixed;
+  font-size: 30px;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  color: white;
+  cursor: pointer;
+  /* display: */
+}
+
+.comment {
+  font-size: 20px;
+  width: 30vw;
+  position: fixed;
+  text-align: right;
+  top: 30px;
+  right: 20px;
+  color: white;
+}

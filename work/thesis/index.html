@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Somewhere in between</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/lazysizes.min.js" id="lazysizes-js"></script>
+	<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+	<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+	<script src="./assets/script.js"></script>
+
+
+</head>
+
+<body>
+	<!-- <nav>
+		<span class="infoButton">Info</span>
+		<span class="artistsButton">Artists</span>
+	</nav>
+
+	<div class="groups">
+		<a class="group1">Group 1</a>
+		<a class="group2">Group 2</a>
+	</div> -->
+
+
+	<div class="camContainer">
+    <video autoplay="true" id="videoElement">
+    </video>
+	</div>
+
+	<div class="container">
+
+    <div class="image" style="opacity: 0; visibility: hidden;">
+      <img class="lazyload" srcset="./img/001.png" alt="">
+    </div>
+
+			<div class="image" style="opacity: 0; visibility: hidden;">
+				<img class="lazyload" srcset="./img/002.png" alt="">
+	    </div>
+
+      <div class="image" style="opacity: 0; visibility: hidden;">
+         <img class="lazyload" srcset="./img/003.png" alt="">
+      </div>
+
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/004.png" alt="">
+      </div>
+
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/005.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/006.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/007.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/008.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/009.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/010.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/011.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/012.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/013.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/014.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/015.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/016.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/017.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/018.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/019.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/020.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/021.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/022.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/023.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/024.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/025.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/026.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/027.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/028.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/029.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/030.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/031.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/032.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/033.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/034.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/035.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/036.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/037.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/038.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/039.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/040.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/041.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/042.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/043.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/044.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/045.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/046.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/047.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/048.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/049.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/050.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/051.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/052.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/053.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/054.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/055.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/056.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/057.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/058.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/059.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/060.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/061.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/062.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/063.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/064.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/065.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/066.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/067.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/068.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/069.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/070.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/071.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/072.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/073.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/074.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/075.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/076.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/077.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/078.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/079.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/080.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/081.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/082.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/083.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/084.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/085.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/086.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/087.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/088.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/089.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/090.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/091.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/092.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/093.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/094.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/095.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/096.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/097.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/098.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/099.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/100.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/101.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/102.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/103.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/104.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/105.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/106.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/107.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/108.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/109.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/110.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/111.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/112.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/113.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/114.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/115.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/116.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/117.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/118.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/119.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/120.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/121.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/122.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/123.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/124.png" alt="">
+      </div>
+      <div class="image" style="opacity: 0; visibility: hidden;">
+           <img class="lazyload" srcset="./img/125.png" alt="">
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </body>
+</html>

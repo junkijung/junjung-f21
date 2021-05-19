@@ -1,5 +1,71 @@
+@font-face {
+  font-family: "Henri";
+  src: url('Henri-roman.woff') format('woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: "Henri";
+  src: url('Henri-italic.woff') format('woff');
+  font-style: italic;
+}
+
 body {
+  font-family: "Henri", "Times New Roman";
+  font-style: normal;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 0.5s;
   background: black;
+}
+
+.bodyFade {
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: black;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-variant-numeric: lining-nums;
+  cursor: pointer;
+  /* z-index: 1; */
+}
+
+.menu tr {
+  color: white;
+  font-size: 60px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  vertical-align: top;
+  }
+
+/* .menu tr:hover {
+  text-decoration: underline;
+} */
+
+.t1 {
+  width: 35px;
+  text-align: center;
+}
+
+.t2 {
+  padding-left: 40px;
+  /* font-style: italic; */
 }
 
 .videoContainer {
